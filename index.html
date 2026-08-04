@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Балансы бирж — Proof of Reserves</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 640px; margin: 8vh auto; padding: 0 24px;
+    background: #0f1115; color: #e6e8ec;
+  }
+  @media (prefers-color-scheme: light) {
+    body { background: #f7f8fa; color: #1a1d23; }
+    a.card { background: #fff; border-color: #e2e5ea; }
+    a.card:hover { border-color: #6b8afd; }
+    .muted { color: #6b7280; }
+  }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  .muted { color: #9aa1ad; font-size: .9rem; margin-bottom: 2rem; }
+  a.card {
+    display: block; padding: 18px 20px; margin: 14px 0;
+    border: 1px solid #2a2f3a; border-radius: 12px;
+    background: #171a21; text-decoration: none; color: inherit;
+    transition: border-color .15s;
+  }
+  a.card:hover { border-color: #6b8afd; }
+  a.card b { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+  a.card span { font-size: .85rem; opacity: .7; }
+</style>
+</head>
+<body>
+  <h1>Балансы бирж (Proof of Reserves)</h1>
+  <p class="muted">Binance · OKX · Bybit · Bitget · MEXC · Gate — данные CoinMarketCap, обновляются ежедневно</p>
+
+  <a class="card" href="dashboard.html">
+    <b>📊 Срез балансов</b>
+    <span>Текущее состояние кошельков по всем биржам</span>
+  </a>
+
+  <a class="card" href="dashboard_2.html">
+    <b>📈 Динамика балансов</b>
+    <span>История изменений по дням (файл ~12 МБ, открывается не сразу)</span>
+  </a>
+</body>
+</html>
