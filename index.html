@@ -11,12 +11,6 @@
     max-width: 640px; margin: 8vh auto; padding: 0 24px;
     background: #0f1115; color: #e6e8ec;
   }
-  @media (prefers-color-scheme: light) {
-    body { background: #f7f8fa; color: #1a1d23; }
-    a.card { background: #fff; border-color: #e2e5ea; }
-    a.card:hover { border-color: #6b8afd; }
-    .muted { color: #6b7280; }
-  }
   h1 { font-size: 1.5rem; margin-bottom: .25rem; }
   .muted { color: #9aa1ad; font-size: .9rem; margin-bottom: 2rem; }
   a.card {
@@ -28,6 +22,14 @@
   a.card:hover { border-color: #6b8afd; }
   a.card b { display: block; font-size: 1.05rem; margin-bottom: 4px; }
   a.card span { font-size: .85rem; opacity: .7; }
+  /* Светлая тема — блок обязан идти ПОСЛЕ базовых правил, иначе при равной
+     специфичности базовые (тёмные) правила перекрывают его */
+  @media (prefers-color-scheme: light) {
+    body { background: #f7f8fa; color: #1a1d23; }
+    a.card { background: #fff; border-color: #e2e5ea; }
+    a.card:hover { border-color: #6b8afd; }
+    .muted { color: #6b7280; }
+  }
 </style>
 </head>
 <body>
